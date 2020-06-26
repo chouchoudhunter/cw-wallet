@@ -3,16 +3,25 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "uni-app",
+				"navigationStyle":"custom"
 			}
 		}
 	    ,{
             "path" : "pages/member/member",
-            "style" : {}
+            "style" : {
+				"app-plus":{
+					"titleNView":false
+				}
+			}
         }
         ,{
             "path" : "pages/center/center",
-            "style" : {}
+            "style" : {
+				"app-plus":{
+					"titleNView":false
+				}
+			}
         }
     ],
 	"globalStyle": {
@@ -25,14 +34,24 @@
 		"list":[
 			{
 				"pagePath":"pages/index/index",
-				"text":"吃喝玩乐"
+				"text":"吃喝玩乐",
+				"iconPath":"static/icon/index.png",
+				"selectedIconPath":"static/icon/index_.png"
 			},{
 				"pagePath":"pages/member/member",
-				"text":"会员"
+				"text":"会员",
+				"iconPath":"static/icon/member.png",
+				"selectedIconPath":"static/icon/member_.png"
 			},{
 				"pagePath":"pages/center/center",
-				"text":"我的"
+				"text":"我的",
+				"iconPath":"static/icon/my.png",
+				"selectedIconPath":"static/icon/my_.png"
 			}
-		]
+		],
+		"fontSize":"16px",
+		"backgroundColor":"#ffffff",
+		"selectedColor":"#d81e06"
+		
 	}
 }
