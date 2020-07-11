@@ -1,21 +1,19 @@
 <template>
 	<view>
 		<view class="top-bg"></view>
-		<uni-nav-bar title="吃喝玩乐首页" backgroundColor="#ff0004" border="false" color="#FFFFFF"><view slot="left">成都</view></uni-nav-bar>
+		<navbar title="吃喝玩乐首页" leftText="成都">
+			<view slot="left" style="height: 18px;"><image src="../../static/icon/location.png" id="navbar-icon"></image></view>
+		</navbar>
 		<view class="slider">
-			<view class="page-section swiper">
-				<view class="page-section-spacing">
-					<swiper class="swiper" indicator-dots="true" autoplay="true" :interval="interval" :duration="duration">
-						<swiper-item><view class="swiper-item">A</view></swiper-item>
-						<swiper-item><view class="swiper-item">B</view></swiper-item>
-						<swiper-item><view class="swiper-item">C</view></swiper-item>
-					</swiper>
-				</view>
-			</view>
+			<swiper class="swiper" indicator-dots="true" autoplay="true" :interval="interval" :duration="duration">
+				<swiper-item><view class="swiper-item">A</view></swiper-item>
+				<swiper-item><view class="swiper-item">B</view></swiper-item>
+				<swiper-item><view class="swiper-item">C</view></swiper-item>
+			</swiper>
 		</view>
 		<view class="quick-link">
 			<ul>
-				<li class="link-item"></li>
+				<li class="link-item" @click="scan()"></li>
 				<li class="link-item"></li>
 				<li class="link-item"></li>
 			</ul>
@@ -77,9 +75,7 @@
 </template>
 
 <script>
-import uniNavBar from '@/components/uni-nav-bar/uni-nav-bar.vue';
 export default {
-	components: { uniNavBar },
 	data() {
 		return {
 			title: 'Hello',
@@ -88,18 +84,42 @@ export default {
 		};
 	},
 	onLoad() {},
-	methods: {}
+	methods: {
+		scan() {
+			uni.navigateTo({
+				url: '../register/login/login'
+			});
+		}
+	}
 };
 </script>
 
 <style lang="scss">
 .slider {
+	margin: 10px 15px;
+	border-radius: 12px;
+	overflow: hidden;
+	box-shadow: 0px 0px 8px 0px #9c9c9c;
 	.swiper-item {
 		background-color: #ececec;
 		height: 100%;
 	}
 }
-.top-bg {
+.bg-content {
+	display: flex;
+	
+	.top-bg {
+		position: absolute;
+		background-color: $cw-base-color;
+		height: 100px;
+		width: 100px;
+		}
+}
+
+#navbar-icon {
+	width: 18px;
+	height: 18px;
+	margin-left: 2px;
 }
 .quick-link {
 	display: flex;

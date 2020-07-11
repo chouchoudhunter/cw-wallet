@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/member/member",
+    "pages/center/center"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "吃喝玩乐",
+        "iconPath": "static/icon/index.png",
+        "selectedIconPath": "static/icon/index_.png"
+      },
+      {
+        "pagePath": "pages/member/member",
+        "text": "会员",
+        "iconPath": "static/icon/member.png",
+        "selectedIconPath": "static/icon/member_.png"
+      },
+      {
+        "pagePath": "pages/center/center",
+        "text": "我的",
+        "iconPath": "static/icon/my.png",
+        "selectedIconPath": "static/icon/my_.png"
+      }
+    ],
+    "fontSize": "16px",
+    "backgroundColor": "#ffffff",
+    "selectedColor": "#d81e06"
+  },
+  "usingComponents": {}
+}

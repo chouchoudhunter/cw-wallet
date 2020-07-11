@@ -1,6 +1,6 @@
 <template>
 	<view style="background-color: #f0eff3;height: 100%;">
-		<uni-nav-bar title="我的" backgroundColor="#ff0004" border="false" color="#FFFFFF"><view slot="right">商户</view></uni-nav-bar>
+		<navbar title="我的"></navbar>
 		<view class="header">
 			<view class="img"></view>
 			<view class="name">成吉思汗</view>
@@ -51,9 +51,7 @@
 </template>
 
 <script>
-import uniNavBar from '@/components/uni-nav-bar/uni-nav-bar.vue';
 export default {
-	components: { uniNavBar },
 	data() {
 		return {};
 	},
@@ -65,26 +63,12 @@ export default {
 .hr {
 	border-bottom: 1px solid #dddddd;
 }
-.navbar {
-	position: relative;
-	padding: 5px 10px;
-	background-color: #ff0004;
-	color: #ffffff;
-	.title {
-		text-align: center;
-	}
-	.right {
-		position: absolute;
-		top: 5px;
-		right: 10px;
-	}
-}
 .header {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	padding: 40px 0;
-	background-color: #ff0004;
+	background-color:$cw-base-color;
 	color: #ffffff;
 	.img {
 		width: 80px;

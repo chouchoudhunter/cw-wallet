@@ -1,6 +1,10 @@
 <template>
 	<view>
-		<uni-nav-bar title="好友列表" backgroundColor="#f00004" border="false" color="#FFFFFF"><view slot="right"></view></uni-nav-bar>
+		<navbar title="好友列表">
+			<view slot="right">
+				<uni-icons type="plus" color="#FFFFFF" size="24"></uni-icons>
+			</view>
+		</navbar>
 		<view class="search">
 			<span></span>
 			<p>关键词搜索</p>
@@ -41,11 +45,11 @@
 </template>
 
 <script>
-import uniNavBar from '@/components/uni-nav-bar/uni-nav-bar.vue';
 export default {
-	components: { uniNavBar },
 	data() {
-		return {};
+		return {
+			title:'sdfsfd'
+		};
 	},
 	methods: {}
 };
