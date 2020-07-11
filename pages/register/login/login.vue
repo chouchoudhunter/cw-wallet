@@ -11,7 +11,8 @@
 				忘记密码?
 			</view>
 		</view>
-		<c-button class="submit">确认</c-button>
+		<c-button class="submit">确认
+		</c-button>
 	</view>
 </template>
 

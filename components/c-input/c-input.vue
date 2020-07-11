@@ -16,22 +16,27 @@
 <script>
 export default {
 	props: {
+		//左边图标
 		iconImg: {
 			type: String,
 			default: ''
 		},
+		//左边文字
 		inputText: {
 			type: String,
 			default: ''
 		},
+		//占位提示
 		placeholder: {
 			type: String,
 			default: '输入'
 		},
+		//line box 两种样式
 		cStyle: {
 			type: String,
 			default: 'line'
 		},
+		//是否是按钮组
 		isGroup: {
 			type: Boolean,
 			default: false

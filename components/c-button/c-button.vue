@@ -9,14 +9,17 @@
 <script>
 	export default {
 		props:{
+			//圆角值
 			cRadius:{
 				type:String,
 				default:"5px"
 			},
+			//按钮文字大小
 			cFontSize:{
 				type:String,
 				default:"18px"
 			},
+			//按钮高度
 			cHeight:{
 				type:String,
 				default:"20px"

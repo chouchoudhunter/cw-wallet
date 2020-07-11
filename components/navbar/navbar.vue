@@ -6,6 +6,7 @@
 				<view class="slot-left">
 					<uni-icons type="arrowleft" color="#FFFFFF" v-if="backBtn" size="24" @click="navigateBack()"></uni-icons>
 					<view v-if="leftText" class="left-text">{{leftText}}</view>
+					<!-- 插槽 -->
 					<slot name="left"></slot>
 					<uni-icons :type="leftIcon" color="#FFFFFF" size="18" v-if="leftIcon"></uni-icons>
 				</view>
@@ -27,18 +28,22 @@ export default {
 		};
 	},
 	props: {
+		//导航栏标题
 		title: {
 			type: String,
 			default: ''
 		},
+		//左边文字
 		leftText: {
 			type: String,
 			default: ''
 		},
+		//左边图标
 		leftIcon: {
 			type: String,
 			default: ''
 		},
+		//返回按钮
 		backBtn: {
 			type: Boolean,
 			default: false
