@@ -8,7 +8,7 @@
 		<view class="info">
 			<view class="info-row">
 				<view class="info-item">
-					<view class="desc">￥9.98</view>
+					<view class="desc">￥9.9</view>
 					<view class="title">零钱</view>
 				</view>
 				<view class="info-item">
