@@ -26,6 +26,10 @@
         ,{
             "path" : "pages/register/find/find",
             "style" : {}
+        },{
+            "path" : "pages/nearby/nearby",
+            "style" :{
+			}
         }
     ],
 	"globalStyle": {
