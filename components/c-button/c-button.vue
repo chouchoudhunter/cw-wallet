@@ -1,6 +1,6 @@
 <template>
 	<view>
-		<view class="c-button" :style="{'border-radius':cRadius,'font-size':cFontSize,'height':cHeight,'line-height':cHeight}">
+		<view class="c-button" :style="{'border-radius':cRadius,'font-size':cFontSize,'height':cHeight,'line-height':cHeight,'width':cWidth}">
 			<slot></slot>
 		</view>
 	</view>
@@ -23,6 +23,10 @@
 			cHeight:{
 				type:String,
 				default:"20px"
+			},
+			cWidth:{
+				type:String,
+				default:""
 			}
 		},
 		data() {
