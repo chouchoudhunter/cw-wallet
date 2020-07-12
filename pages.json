@@ -36,7 +36,7 @@
             "style" : {}
         }
         ,{
-            "path" : "pages/member/add/add",
+            "path" : "pages/member/add-friend/add-friend",
             "style" : {}
         }
     ],
