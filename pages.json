@@ -6,7 +6,7 @@
 			}
 		}
 	    ,{
-            "path" : "pages/member/member",
+            "path" : "pages/member/friend/friend",
             "style" : {
 			}
         }
@@ -27,9 +27,17 @@
             "path" : "pages/register/find/find",
             "style" : {}
         },{
-            "path" : "pages/nearby/nearby",
+            "path" : "pages/member/nearby/nearby",
             "style" :{
 			}
+        }
+        ,{
+            "path" : "pages/member/scan/scan",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/member/add/add",
+            "style" : {}
         }
     ],
 	"globalStyle": {
@@ -49,7 +57,7 @@
 				"iconPath":"static/icon/index.png",
 				"selectedIconPath":"static/icon/index_.png"
 			},{
-				"pagePath":"pages/member/member",
+				"pagePath":"pages/member/friend/friend",
 				"text":"会员",
 				"iconPath":"static/icon/member.png",
 				"selectedIconPath":"static/icon/member_.png"

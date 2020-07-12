@@ -11,11 +11,44 @@
 							<p>昵称: 生辉</p>
 						</view>
 					</view>
-
 					<c-button cRadius="4px" cFontSize="14px" cHeight="10px" cWidth="50px">同意</c-button>
 				</view>
 				<view class="location">
-					<image src="@/static/icon/定位@2x.png" mode=""></image>
+					<image src="@/static/icon/location@2x.png" mode=""></image>
+					<p>4.0km</p>
+				</view>
+				<view class="hr"></view>
+			</view>
+			<view>
+				<view class="item">
+					<view class="img-text">
+						<view class="img"></view>
+						<view class="text">
+							<h1>陈先以</h1>
+							<p>昵称: 生辉</p>
+						</view>
+					</view>
+					<c-button cRadius="4px" cFontSize="14px" cHeight="10px" cWidth="50px">同意</c-button>
+				</view>
+				<view class="location">
+					<image src="@/static/icon/location@2x.png" mode=""></image>
+					<p>4.0km</p>
+				</view>
+				<view class="hr"></view>
+			</view>
+			<view>
+				<view class="item">
+					<view class="img-text">
+						<view class="img"></view>
+						<view class="text">
+							<h1>陈先以</h1>
+							<p>昵称: 生辉</p>
+						</view>
+					</view>
+					<c-button cRadius="4px" cFontSize="14px" cHeight="10px" cWidth="50px">同意</c-button>
+				</view>
+				<view class="location">
+					<image src="@/static/icon/location@2x.png" mode=""></image>
 					<p>4.0km</p>
 				</view>
 				<view class="hr"></view>
