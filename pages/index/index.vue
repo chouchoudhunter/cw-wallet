@@ -136,7 +136,7 @@ export default {
 		.link-item {
 			width: 60px;
 			height: 60px;
-			background-color: #f3f3f3;
+			background-color: red;
 			border-radius: 10px;
 			text-align: center;
 			margin: 0 25px;
@@ -145,7 +145,6 @@ export default {
 }
 .discount {
 	.scroll {
-		background-color: #ebebeb;
 		.scroll-view-item {
 			display: flex;
 			flex-direction: row;

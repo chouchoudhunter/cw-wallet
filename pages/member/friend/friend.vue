@@ -1,5 +1,5 @@
 <template>
-	<view>
+	<view id="friend">
 		<navbar title="好友列表">
 			<view slot="right">
 				<uni-icons type="plus" color="#FFFFFF" size="24"></uni-icons>
@@ -56,6 +56,9 @@ export default {
 </script>
 
 <style lang="scss">
+#friend{
+	background-color:$uni-bg-color;
+}
 .search {
 	display: flex;
 	flex-direction: row;

@@ -1,5 +1,5 @@
 <template>
-	<view style="background-color: #f0eff3;height: 100%;">
+	<view>
 		<navbar title="我的"></navbar>
 		<view class="header">
 			<view class="img"></view>

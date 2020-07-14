@@ -1,5 +1,5 @@
 <template>
-	<view>
+	<view id="scan">
 		<navbar title="扫一扫" :backBtn="true"></navbar>
 		<view class="content">
 			<view class="item">
@@ -25,6 +25,10 @@
 </script>
 
 <style lang="scss">
+#scan{
+	background-color:$uni-bg-color;
+	height: 100%;
+}	
 .content {
 	padding: 25px 12px 0 12px;
 	.item {

@@ -21,7 +21,6 @@
 <style lang="scss">
 .fin-body{
 	padding: 0 15px;
-	background-color: $cw-background-grey;
 	height: 100%;
 }
 </style>

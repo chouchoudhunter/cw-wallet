@@ -108,7 +108,7 @@ export default {
 				width: 25%;
 				font-size: 16px;
 				text-align: right;
-				padding-right: 20px;
+				padding-right: 14px;
 			}
 		}
 	}

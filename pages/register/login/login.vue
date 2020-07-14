@@ -36,6 +36,8 @@
 <style lang="scss">
 .body{
 	padding: 20px 10%;
+	background-color: $uni-bg-color;
+	height: 100%;
 }
 .title{
 	font-size: 17px;

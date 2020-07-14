@@ -4,7 +4,7 @@
 			<view class="input">
 				<image v-if="iconImg" :src="'../../../static/icon/' + iconImg + '.png'" class="icon"></image>
 				<view v-if="inputText" class="input-text">{{ inputText }}</view>
-				<input type="text" :placeholder="placeholder" class="box-text" />
+				<input type="text" :placeholder="placeholder" :style="{'text-align':cTextAlign,'font-size':cFontSize,'color':cColor}" class="box-text" />
 			</view>
 			<c-button class="c-input-group-btn" v-if="isGroup" cRadius="0px" cFontSize="15px" cHeight="24px">获取验证码</c-button>
 		</view>
@@ -31,6 +31,21 @@ export default {
 			type: String,
 			default: '输入'
 		},
+		//占位文字对齐方式
+		cTextAlign: {
+			type: String,
+			default: '',
+		},
+		//输入文字的大小
+		cFontSize: {
+			type: String,
+			default: ''
+		},
+		//输入文字的颜色
+		cColor: {
+			type: String,
+			default: '#333333'
+		},
 		//line box 两种样式
 		cStyle: {
 			type: String,
@@ -54,9 +69,10 @@ export default {
 	margin-top: 10px;
 }
 .input-text {
-	margin-right:10px;
-	width: 60px;
+	// margin-right:10px;
+	// width: 60px;
 	font-size: 15px;
+	margin-right: 20px;
 	color: #333333;
 }
 .c-input-group {

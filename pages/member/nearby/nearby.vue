@@ -1,5 +1,5 @@
 <template>
-	<view>
+	<view id="nearby">
 		<navbar title="附近的人" :backBtn="true"></navbar>
 		<view class="list">
 			<view>
@@ -66,6 +66,9 @@ export default {
 </script>
 
 <style lang="scss">
+#nearby{
+		background-color:$uni-bg-color;
+}	
 .list {
 	padding: 0 20px;
 	margin: 15px 0 0 0;

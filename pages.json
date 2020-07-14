@@ -39,6 +39,34 @@
             "path" : "pages/member/add-friend/add-friend",
             "style" : {}
         }
+        ,{
+            "path" : "pages/my/helpCenter/helpCenter",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/my/information/information",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/member/shopFor/shopFor",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/my/bindEmail/bindEmail",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/my/doAgent/doAgent",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/my/recharge/recharge",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/my/recharge-record/recharge-record",
+            "style" : {}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
