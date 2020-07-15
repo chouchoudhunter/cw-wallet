@@ -40,7 +40,7 @@
             "style" : {}
         }
         ,{
-            "path" : "pages/my/helpCenter/helpCenter",
+            "path" : "pages/my/help-center/help-center",
             "style" : {}
         }
         ,{
@@ -48,15 +48,15 @@
             "style" : {}
         }
         ,{
-            "path" : "pages/member/shopFor/shopFor",
+            "path" : "pages/member/shop-for/shop-for",
             "style" : {}
         }
         ,{
-            "path" : "pages/my/bindEmail/bindEmail",
+            "path" : "pages/my/bind-email/bind-email",
             "style" : {}
         }
         ,{
-            "path" : "pages/my/doAgent/doAgent",
+            "path" : "pages/my/do-agent/do-agent",
             "style" : {}
         }
         ,{
@@ -69,6 +69,18 @@
         }
         ,{
             "path" : "pages/play/transfer/transfer",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/my/change/change",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/my/withdraw-record/withdraw-record",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/my/withdraw/withdraw",
             "style" : {}
         }
     ],

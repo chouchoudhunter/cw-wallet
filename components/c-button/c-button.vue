@@ -1,6 +1,6 @@
 <template>
 	<view>
-		<view class="c-button" :style="{'border-radius':cRadius,'font-size':cFontSize,'height':cHeight,'line-height':cHeight,'width':cWidth}">
+		<view class="c-button" :style="{'border-radius':cRadius,'font-size':cFontSize,'height':cHeight,'line-height':cHeight,'width':cWidth}" @click="_onClick">
 			<slot></slot>
 		</view>
 	</view>
@@ -33,6 +33,11 @@
 			return {
 				
 			};
+		},
+		methods: {
+			_onClick() {
+				this.$emit('click')
+			}
 		}
 	}
 </script>

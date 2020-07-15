@@ -90,7 +90,7 @@ export default {
 			.slot-left {
 				width: 25%;
 				text-align: left;
-				padding-left: 20px;
+				padding-left: 10px;
 				display: flex;
 				flex-direction: row;
 				align-items: center;

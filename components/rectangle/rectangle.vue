@@ -1,15 +1,15 @@
 <template>
 	<view>
-		<view class="list-go">
+		<view class="list-go" @click="_onClick">
 			<view class="img-text">					
 				<view class="leftIcon" v-if="leftIcon">					
-					<img  :src="iconSrc" mode=""></img>
+					<image class="img" :src="iconSrc" mode=""></image>
 				</view>
 				<p>{{leftText}}</p>
 			</view>
 			<view class="right">				
 				<p>{{rightText}}</p>
-				<img class="arrows" src="@/static/icon/member/arrows.png" mode=""></img>
+				<image class="arrows" src="@/static/icon/member/arrows.png" mode=""></image>
 			</view>
 		</view>
 	</view>
@@ -18,7 +18,7 @@
 <script>
 	export default {
 		props:{
-			//左边图标
+			//左边图标是否有
 			leftIcon:{
 				type: Boolean,
 				default: true
@@ -37,8 +37,14 @@
 			rightText:{
 				type:String,
 				default:''
-			}				
-		}		
+			},
+		},
+		methods: {
+			_onClick() {
+				this.$emit('click')
+			}
+		}
+			
 	}
 </script>
 
@@ -46,9 +52,9 @@
 .list-go {
 		display: flex;
 		height: 44px;
-		margin: 0 0 5px 0;
 		padding:0 12px;
 		background-color: #FFFFFF;
+		margin-bottom: 5px;
 		.img-text{
 			display: flex;
 			flex-direction: row;
@@ -58,9 +64,10 @@
 				width: 20px;
 				height: 20px;
 				text-align: center;
-				margin: 0 15px 0 0;
-				img{					
+				margin-right: 15px;
+				.img{					
 					height: 100%;
+					width: 100%;
 				}
 			}
 			p {				
