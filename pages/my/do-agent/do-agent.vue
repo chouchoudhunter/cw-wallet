@@ -8,8 +8,8 @@
 		<c-input class="in" inputText="*身份证号:" placeholder="请输入您的身份证号" cStyle="box"></c-input>
 		<c-input class="in" inputText="*手机号:" placeholder="请输入您的手机号" cStyle="box"></c-input>
 		<view class="agree">
-
-			<p>我已经阅读并了解<a>《推广代理员申请协议》</a></p>
+			<checkbox class="kuang"></checkbox>				
+			<p class="text">我已经阅读并了解<a>《推广代理员申请协议》</a></p>
 		</view>
 		<c-button class="but" cFontSize="17px">申请成为代理商</c-button>
 	</view>
@@ -40,14 +40,21 @@
 		}
 	}
 	.agree {
-		
-		p {
+		margin: 12px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		.kuang{
+			transform: scale(0.6);
+			border-color: red;
+		}
+		.text{
 			font-size: 12px;
+			margin-top: 2px;
 			a {
 				color: #E68531
-			}
-		}
-		
+			}	
+		}	
 	}
 	.but {
 		margin: 50px 12px 0;

@@ -63,7 +63,6 @@
 			.leftIcon {
 				width: 20px;
 				height: 20px;
-				text-align: center;
 				margin-right: 15px;
 				.img{					
 					height: 100%;

@@ -28,6 +28,7 @@
 			};
 		},
 		methods:{
+			//跳转到 充值记录
 			toRecord(){
 				uni.navigateTo({
 					url: '../recharge-record/recharge-record'

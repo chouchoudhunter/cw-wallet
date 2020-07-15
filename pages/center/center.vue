@@ -22,7 +22,7 @@
 			<rectangle class="rect" leftText="申请成为推广代理" @click="toAgent()"></rectangle>
 			<rectangle class="rect" leftText="发布优惠券" ></rectangle>
 			<rectangle class="rect" leftText="帮助中心" @click="toHelp()"></rectangle>
-			<rectangle class="rect" leftText="我的工单" ></rectangle>
+			<rectangle class="rect" leftText="我的工单" @click="toMessage()"></rectangle>
 		</view>
 	</view>
 </template>
@@ -57,6 +57,12 @@
 					url: '../my/do-agent/do-agent'
 				});
 			},
+			//跳转到 留言/工单
+			toMessage(){
+				uni.navigateTo({
+					url: '../my/leave-message/leave-message'
+				});
+			}
 		}
 	};
 </script>
