@@ -2,7 +2,7 @@
 	<view>
 		<view class="list-go" @click="_onClick">
 			<view class="img-text">									
-					<image class="img" :src="iconSrc" v-if="leftIcon" mode=""></image>	
+				<image class="img" :src="iconSrc" v-if="leftIcon" mode=""></image>	
 				<p>{{leftText}}</p>
 			</view>
 			<view class="right">				
