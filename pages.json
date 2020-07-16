@@ -93,6 +93,10 @@
             "path" : "pages/play/my-qr/my-qr",
             "style" : {}
         }
+        ,{
+            "path" : "pages/my/article-details/article-details",
+            "style" : {}
+        }
     ],
     "globalStyle" : {
         "navigationBarTextStyle" : "white",

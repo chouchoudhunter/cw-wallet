@@ -1,10 +1,8 @@
 <template>
 	<view>
 		<view class="list-go" @click="_onClick">
-			<view class="img-text">					
-				<view class="leftIcon" v-if="leftIcon">					
-					<image class="img" :src="iconSrc" mode=""></image>
-				</view>
+			<view class="img-text">									
+					<image class="img" :src="iconSrc" v-if="leftIcon" mode=""></image>	
 				<p>{{leftText}}</p>
 			</view>
 			<view class="right">				
@@ -60,14 +58,12 @@
 			flex-direction: row;
 			align-items: center;
 			flex-grow: 1;
-			.leftIcon {
-				width: 20px;
-				height: 20px;
-				margin-right: 15px;
+			
 				.img{					
-					height: 100%;
-					width: 100%;
-				}
+					width: 20px;
+					height: 20px;
+					margin-right: 15px;
+				
 			}
 			p {				
 				font-size: 15px;
