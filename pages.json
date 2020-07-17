@@ -97,6 +97,10 @@
             "path" : "pages/my/article-details/article-details",
             "style" : {}
         }
+        ,{
+            "path" : "pages/play/nearby-shops/nearby-shops",
+            "style" : {}
+        }
     ],
     "globalStyle" : {
         "navigationBarTextStyle" : "white",

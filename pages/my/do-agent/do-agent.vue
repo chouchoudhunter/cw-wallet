@@ -27,7 +27,7 @@
 
 <style lang="scss">
 	.in{
-		margin: 0 0 1px 0 ;
+		margin: 0 0 1px 0;
 	}
 	.welcome {
 		margin: 13px 0;

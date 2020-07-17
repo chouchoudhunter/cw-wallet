@@ -49,9 +49,7 @@
 </script>
 
 <style lang="scss">
-#article-details{
-	background-color: $uni-bg-color;
-}
+
 .article{
 	margin: 25px 12px;
 	h1{

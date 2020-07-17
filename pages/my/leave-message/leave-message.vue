@@ -5,7 +5,9 @@
 				<view class="record" slot="right" @click="toHistory()">历史留言</view>
 			</navbar>
 			<p>留言</p>
-			<textarea maxlength="200" value="" placeholder="请输入内容..." />
+			<view class="text">	
+				<textarea maxlength="200" value="" placeholder="请输入内容..." />
+			</view>
 			<c-input inputText="*联系人" placeholder="请输入联系人" cStyle="box"></c-input>
 			<c-input inputText="*手机号" placeholder="请输入手机号" cStyle="box"></c-input>
 			<c-input inputText="*验证码" placeholder="请输入验证码" cStyle="box" :isGroup="true"></c-input>
@@ -35,19 +37,20 @@
 <style lang="scss">
 .content{
 	margin: 21px 12px 0 12px;
-}
-
 	p{
 		font-size: 15px;
 		margin-bottom: 12px;
 	}
-	textarea{
-		font-size: 14px;
-		padding: 12px;
-		margin-right: 0;
+	.text{
 		border-radius: 2px;
 		background-color: $uni-bg-color;
+		padding: 12px;
 	}
+	textarea{
+		font-size: 14px;
+		width: 100%;
+	}
+}
 .but{
 	margin-top: 65px;
 }
