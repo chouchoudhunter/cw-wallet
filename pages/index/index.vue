@@ -100,6 +100,7 @@ export default {
 	border-radius: 12px;
 	overflow: hidden;
 	box-shadow: 0px 0px 8px 0px #9c9c9c;
+	background-color: #FFFFFF;
 	.swiper-item {
 		background-color: #ececec;
 		height: 100%;

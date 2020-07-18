@@ -101,6 +101,10 @@
             "path" : "pages/play/nearby-shops/nearby-shops",
             "style" : {}
         }
+        ,{
+            "path" : "pages/my/add-bank-card/add-bank-card",
+            "style" : {}
+        }
     ],
     "globalStyle" : {
         "navigationBarTextStyle" : "white",

@@ -1,12 +1,13 @@
 <template>
 	<view :class="cStyle">
-		<view :class="{ 'c-input-group': isGroup }">
+		<view class="c-input-content">
 			<view class="input">
 				<image v-if="iconImg" :src="'../../../static/icon/' + iconImg + '.png'" class="icon"></image>
 				<view v-if="inputText" class="input-text">{{ inputText }}</view>
-				<input type="text" :placeholder="placeholder" :style="{'text-align':cTextAlign,'font-size':cFontSize,'color':cColor}" class="box-text" />
+				<input :disabled="cDisabled" type="text" :placeholder="placeholder" :style="{'text-align':cTextAlign,'font-size':cFontSize,'color':cColor}" class="box-text" />
 			</view>
-			<c-button class="c-input-group-btn" v-if="isGroup" cRadius="0px" cFontSize="15px" cHeight="24px">获取验证码</c-button>
+			
+			<slot name="right"></slot>
 		</view>
 
 		<view class="hr" v-if="cStyle == 'line' ? true : false"></view>
@@ -51,10 +52,10 @@ export default {
 			type: String,
 			default: 'line'
 		},
-		//是否是按钮组
-		isGroup: {
-			type: Boolean,
-			default: false
+		//是否禁用
+		cDisabled:{
+			type:Boolean,
+			default:false
 		}
 	},
 	data() {
@@ -69,20 +70,16 @@ export default {
 	margin-top: 10px;
 }
 .input-text {
-	// margin-right:10px;
-	// width: 60px;
 	font-size: 15px;
 	margin-right: 20px;
 	color: #333333;
 }
-.c-input-group {
+.c-input-content{
 	display: flex;
 	flex-direction: row;
+	background-color: #FFFFFF;
 	.input{
 		flex-grow: 1;
-	}
-	.c-input-group-btn {
-		width: 120px;
 	}
 }
 .line {
@@ -113,7 +110,6 @@ export default {
 		align-items: center;
 		justify-content: center;
 		font-size: 14px;
-		background-color: #ffffff;
 		padding: 12px;
 		.icon {
 			width: 15px;
