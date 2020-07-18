@@ -10,10 +10,10 @@
 		</view>
 		<view class="shop-nav">
 			<!-- 导航栏 -->
-			<view :class="{ 'style-black':true, 'style-red': menuActive[0] }" ref="pop" @click="goActiveList(0)">人气商家</view>
-			<view :class="{ 'style-black':true, 'style-red': menuActive[1]}" @click="goActiveList(1)">品牌商家</view>
+			<view :class="{ 'style-black':true, 'style-red': menuActive[0] }" @click="goActiveList(0)">人气商家</view>
+			<view :class="{ 'style-black':true, 'style-red': menuActive[1] }" @click="goActiveList(1)">品牌商家</view>
 			<view :class="{ 'style-black':true, 'style-red': menuActive[2] }" @click="goActiveList(2)">推荐商家</view>
-			<view :class="{ 'style-black':true, 'style-red': menuActive[3]}" @click="goActiveList(3)">最新入驻</view>
+			<view :class="{ 'style-black':true, 'style-red': menuActive[3] }" @click="goActiveList(3)">最新入驻</view>
 			<view :class="{ 'style-black':true, 'style-red': menuActive[4] }" @click="goActiveList(4)">距离最近</view>
 		</view>
 		<view class="shop-list" v-for="(item, index) in nowlist" :key="index">
