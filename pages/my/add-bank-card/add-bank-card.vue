@@ -9,9 +9,10 @@
 		<c-input inputText="持卡人" cStyle="box" placeholder="个人存储账户" cTextAlign="right"></c-input>
 		<c-input inputText="银行卡号" cStyle="box" placeholder="上传银行卡照片自动识别" cTextAlign="right">
 			<view slot="right" class="add-bank-item">
-				<uni-icons type="arrowright" color="#b0b0b0" size="18"></uni-icons>
-				<button @click="open">打开弹窗</button>
-				<uni-popup ref="popup" type="message"><uni-popup-message type="success" message="成功消息" :duration="2000"></uni-popup-message></uni-popup>
+				<uni-icons type="arrowright" color="#b0b0b0" size="18" @click="open"></uni-icons>
+				<uni-popup ref="popup" type="select">
+					<uni-popup-select></uni-popup-select>
+				</uni-popup>
 			</view>
 		</c-input>
 		<c-input inputText="开户银行" cStyle="box" placeholder="请选择开户银行" cTextAlign="right" :cDisabled="true">
@@ -32,12 +33,12 @@
 
 <script>
 import uniPopup from '@/components/uni-popup/uni-popup.vue';
-import uniPopupMessage from '@/components/uni-popup/uni-popup-message.vue';
+import UniPopupSelect from '@/components/uni-popup/uni-popup-select.vue';
 
 export default {
 	components: {
 		uniPopup,
-		uniPopupMessage
+		UniPopupSelect
 	},
 	data() {
 		return {};
