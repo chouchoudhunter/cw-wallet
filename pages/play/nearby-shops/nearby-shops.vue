@@ -9,13 +9,13 @@
 			</swiper>
 		</view>
 		<view class="shop-nav">  <!-- 导航栏 -->
-			<view :class="style" ref="pop" @click="goPopular()">人气商家</view>
-			<view :class="style" @click="goBrand()">品牌商家</view>
-			<view :class="style" @click="goRecommend()">推荐商家</view>
-			<view :class="style" @click="goNewest()">最新入驻</view>
-			<view :class="style" @click="goClosest()">距离最近</view>
+			<view :class="style1?'style-red':'style-black'" ref="pop" @click="goPopular()">人气商家</view>
+			<view :class="style2?'style-red':'style-black'" @click="goBrand()">品牌商家</view>
+			<view :class="style3?'style-red':'style-black'" @click="goRecommend()">推荐商家</view>
+			<view :class="style4?'style-red':'style-black'" @click="goNewest()">最新入驻</view>
+			<view :class="style5?'style-red':'style-black'" @click="goClosest()">距离最近</view>
 		</view>
-		<view class="shop-list" v-for="item in nowlist" :key="item">
+		<view class="shop-list" v-for="(item,index) in nowlist" :key="index">
 			<view class="shop-left">
 				<image class="picture" :src="item.picture" mode=""></image>
 				<!-- <view class="picture">item.picture</view> -->
@@ -36,7 +36,13 @@
 	export default {
 		data() {
 			return {
-				style:'style1',
+				style1:true,
+				style2:false,
+				style3:false,
+				style4:false,
+				style5:false,
+				interval: 2000,
+				duration: 500,
 				nowlist:[
 					{picture:'',name:'1',address:'',distance:''},
 					{picture:'',name:'2',address:'',distance:''},
@@ -79,23 +85,47 @@
 		methods:{
 			//跳转到 人气商家
 			goPopular(){
-				this.style='style2';
+				this.style1=true;
+				this.style2=false;
+				this.style3=false;
+				this.style4=false;
+				this.style5=false;
 				this.nowlist=JSON.parse(JSON.stringify(this.popular));
 			},
 			//跳转到 品牌商家
 			goBrand(){
+				this.style1=false;
+				this.style2=true;
+				this.style3=false;
+				this.style4=false;
+				this.style5=false;
 				this.nowlist=JSON.parse(JSON.stringify(this.brand));
 			},
 			//跳转到 推荐商家
 			goRecommend(){
+				this.style1=false;
+				this.style2=false;
+				this.style3=true;
+				this.style4=false;
+				this.style5=false;
 				this.nowlist=JSON.parse(JSON.stringify(this.recommend));
 			},
 			//跳转到 最新入驻
 			goNewest(){
+				this.style1=false;
+				this.style2=false;
+				this.style3=false;
+				this.style4=true;
+				this.style5=false;
 				this.nowlist=JSON.parse(JSON.stringify(this.newest));
 			},
 			//跳转到 距离最近
 			goClosest(){
+				this.style1=false;
+				this.style2=false;
+				this.style3=false;
+				this.style4=false;
+				this.style5=true;
 				this.nowlist=JSON.parse(JSON.stringify(this.closest));
 			},
 		},
@@ -116,15 +146,15 @@
 	font-size: 14px;
 	line-height: 40px;
 	text-align: center;
-	.style1{
-		width: 20%;
-		// color:$cw-base-color;		
-		// border-bottom: solid 2px $cw-base-color;
-	}
-	.style2{
+	.style-red{
 		width: 20%;
 		color:$cw-base-color;		
 		border-bottom: solid 2px $cw-base-color;
+	}
+	.style-black{
+		width: 20%;
+		// color:$cw-base-color;		
+		// border-bottom: solid 2px $cw-base-color;
 	}
 }
 .shop-list{
