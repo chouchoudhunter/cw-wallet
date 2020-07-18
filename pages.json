@@ -90,7 +90,7 @@
             "style" : {}
         }
         ,{
-            "path" : "pages/play/my-qr/my-qr",
+            "path" : "pages/play/my-code/my-code",
             "style" : {}
         }
         ,{
@@ -102,7 +102,37 @@
             "style" : {}
         }
         ,{
-            "path" : "pages/my/add-bank-card/add-bank-card",
+            "path" : "pages/my/add-bank-card/add-bank-card"
+		},{
+            "path" : "pages/my/email-code/email-code",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/my/change-login/change-login",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/my/change-pay/change-pay",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/play/shop-details/shop-details",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/play/receive-code/receive-code",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/play/pay-code/pay-code",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/play/pay-record/pay-record",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/play/receive-record/receive-record",
             "style" : {}
         }
     ],

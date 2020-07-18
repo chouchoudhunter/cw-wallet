@@ -4,8 +4,8 @@
 		<view class="list">			
 			<rectangle  leftText="我的二维码" :leftIcon="false"></rectangle>
 			<rectangle  leftText="个人信息修改" :leftIcon="false"></rectangle>
-			<rectangle  leftText="登录密码修改" :leftIcon="false"></rectangle>
-			<rectangle  leftText="支付密码修改" :leftIcon="false"></rectangle>
+			<rectangle  leftText="登录密码修改" @click="toChangeLogin()" :leftIcon="false" ></rectangle>
+			<rectangle  leftText="支付密码修改" @click="toChangePay()" :leftIcon="false"></rectangle>
 		</view>
 		<c-button class="but" cFontSize="17px">退出登录</c-button>
 	</view>
@@ -17,6 +17,21 @@
 			return {
 				
 			};
+		},
+		methods:{
+			//跳转到 修改登录密码
+			toChangeLogin(){
+				uni.navigateTo({
+					url: '../change-login/change-login'
+				});
+			},
+			//跳转到 修改支付密码
+			toChangePay(){
+				uni.navigateTo({
+					url: '../change-pay/change-pay'
+				});
+			},	
+						
 		}
 	}
 </script>
