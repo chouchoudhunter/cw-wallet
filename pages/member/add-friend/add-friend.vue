@@ -2,9 +2,9 @@
 	<view>
 		<navbar title="添加好友" :backBtn="true"></navbar>
 		<view class="list">
-			<rectangle  leftText="手机联系人" :iconSrc="require('@/static/icon/member/contact.png')" ></rectangle>
-			<rectangle  leftText="扫一扫" :iconSrc="require('@/static/icon/member/scan.png')"></rectangle>
-			<rectangle  @click="toNearby()" leftText="附近的人" :iconSrc="require('@/static/icon/member/nearpeople.png')"></rectangle>
+			<rectangle  leftText="手机联系人" iconSrc="contact" ></rectangle>
+			<rectangle  leftText="扫一扫" iconSrc="scan"></rectangle>
+			<rectangle  leftText="附近的人" iconSrc="nearpeople" @click="toNearby()"></rectangle>
 		</view>
 	</view>
 </template>

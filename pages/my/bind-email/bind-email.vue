@@ -2,7 +2,7 @@
 	<view id="bindEmail">
 		<navbar title="绑定邮箱" :backBtn="true"></navbar>
 		<c-input class="in" cTextAlign="right" inputText="绑定邮箱" cStyle="box" placeholder="请输入邮箱地址"></c-input>
-		<c-button class="but" cFontSize="17px">发送验证码</c-button>
+		<c-button class="but" cFontSize="17px" @click="toEmailCode()">发送验证码</c-button>
 	</view>
 </template>
 
@@ -12,6 +12,14 @@
 			return {
 				
 			};
+		},
+		methods:{
+			//跳转到 绑定邮箱-验证码
+			toEmailCode(){
+				uni.navigateTo({
+					url: '../email-code/email-code'
+				});
+			},			
 		}
 	}
 </script>

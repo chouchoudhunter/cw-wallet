@@ -1,6 +1,6 @@
 <template>
 	<view>
-		<icon-name :iconSrc="require('@/static/icon/member/scan.png')" name="周边游/旅游"></icon-name>
+		<icon-name iconSrc="scan" name="周边游/旅游"></icon-name>
 	</view>
 </template>
 

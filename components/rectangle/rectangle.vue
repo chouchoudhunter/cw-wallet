@@ -2,7 +2,7 @@
 	<view>
 		<view class="list-go" @click="_onClick">
 			<view class="img-text">									
-				<image class="img" :src="iconSrc" v-if="leftIcon" mode=""></image>	
+				<image class="img" :src="'../../../static/recicon/'+iconSrc+'.png'" v-if="leftIcon" mode=""></image>	
 				<p>{{leftText}}</p>
 			</view>
 			<view class="right">				
@@ -71,6 +71,7 @@
 		}
 		.right{
 			display: flex;
+			align-items: center;
 			p{
 				margin: 0 16px 0 0;
 				font-size: 15px;
@@ -79,8 +80,7 @@
 			}
 			.arrows {
 				width: 6.5px;
-				height: 12px;	
-				margin: auto 0;
+				height: 12px;
 			}
 		}
 }
