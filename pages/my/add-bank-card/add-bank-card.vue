@@ -11,9 +11,7 @@
 			<view slot="right" class="add-bank-item">
 				<uni-icons type="arrowright" color="#b0b0b0" size="18"></uni-icons>
 				<button @click="open">打开弹窗</button>
-				<uni-popup ref="popup" type="dialog">
-				    <uni-popup-dialog type="input" message="成功消息" :duration="2000" :before-close="true" @close="close" @confirm="confirm"></uni-popup-dialog>
-				</uni-popup>
+				<uni-popup ref="popup" type="message"><uni-popup-message type="success" message="成功消息" :duration="2000"></uni-popup-message></uni-popup>
 			</view>
 		</c-input>
 		<c-input inputText="开户银行" cStyle="box" placeholder="请选择开户银行" cTextAlign="right" :cDisabled="true">
@@ -35,8 +33,12 @@
 <script>
 import uniPopup from '@/components/uni-popup/uni-popup.vue';
 import uniPopupMessage from '@/components/uni-popup/uni-popup-message.vue';
-import uniPopupDialog from '@/components/uni-popup/uni-popup-dialog.vue';
+
 export default {
+	components: {
+		uniPopup,
+		uniPopupMessage
+	},
 	data() {
 		return {};
 	},
