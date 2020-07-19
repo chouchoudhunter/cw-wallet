@@ -13,7 +13,7 @@
 				</view>
 				<view class="info-item">
 					<view class="desc">2</view>
-					<view class="title">优惠券</view>
+					<view class="title" @click="goCoupon()">优惠券</view>
 				</view>
 			</view>
 		</view>
@@ -66,6 +66,12 @@
 			toNearbyShop(){
 				uni.navigateTo({
 					url: '../play/nearby-shops/nearby-shops'
+				});
+			},
+			//跳转到优惠券
+			goCoupon(){
+				uni.navigateTo({
+					url: '../my/coupon/coupon'
 				});
 			}
 		}
