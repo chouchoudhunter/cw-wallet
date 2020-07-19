@@ -2,13 +2,13 @@
 	<view id="receive-code">
 		<navbar title="个人收款" :backBtn="true"></navbar>
 		<view class="content">
-			<p>长城钱包扫一扫，向我付钱</p>
-			<view class="QR-code"></view>
+			<p class="text">长城钱包扫一扫，向我付钱</p>
+			<view class="qr-code"></view>
 			<view class="set-save">
 				<view class="set">设置金额</view>
 				<view class="save">保存图片</view>
 			</view>
-			<rectangle  leftText="收款记录" iconSrc="" @click="toReceiveRecord()"></rectangle>
+			<rectangle  leftText="收款记录" iconSrc="recevie" @click="toReceiveRecord()"></rectangle>
 		</view>
 	</view>
 </template>
@@ -38,7 +38,37 @@
 	.content{
 		background-color: $uni-bg-color;
 		margin: 20px 12px 0 12px;
-		height: 85%;
+		padding-top: 36px;
+		height: 83%;
+		text-align: center;
+		border-radius: 5px;
+		.text{
+			font-size: 15px;
+			margin-bottom: 36px;
+		}
+		.qr-code{
+			width: 178px;
+			height: 178px;
+			margin: 0 auto;
+			background-color: #C0C0C0;
+		}
+		.set-save{
+			display: flex;
+			justify-content: center;
+			font-size: 14px;
+			color: $cw-base-color;
+			margin: 40px 0;
+			.set{
+				width: 89px;
+				text-align: left;
+				border-right: solid 0.5px #E5E5E5;
+			}
+			.save{
+				width: 89px;
+				text-align: right;
+				border-left: solid 0.5px #E5E5E5;
+			}
+		}
 	}
 }
 </style>

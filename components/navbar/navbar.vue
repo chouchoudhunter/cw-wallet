@@ -1,6 +1,6 @@
 <template>
 	<view class="navbar">
-		<view class="navbar-fixed">
+		<view class="navbar-fixed" :style="{'background-color':backColor}">
 			<view class="navbar-status" :style="{ height: statusBarHeight + 'px' }"></view>
 			<view class="navbar-content" :style="{ height: navbarHeight + 'px' ,width:navbarWidth?navbarWidth+'px':'100%'}">
 				<view class="slot-left">
@@ -47,6 +47,11 @@ export default {
 		backBtn: {
 			type: Boolean,
 			default: false
+		},
+		//背景颜色，默认红色
+		backColor: {
+			type: String,
+			default: '#FF2121'
 		}
 	},
 	created() {
@@ -75,11 +80,12 @@ export default {
 .navbar {
 	.navbar-fixed {
 		position: fixed;
-		background-color: $cw-base-color;
+		// background-color: $cw-base-color;
 		width: 100%;
 		top: 0;
 		left: 0;
 		z-index: 99;
+		letter-spacing: 2px;
 		.navbar-status {
 		}
 		.navbar-content {
