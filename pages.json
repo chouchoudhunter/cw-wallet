@@ -86,7 +86,7 @@
             "style" : {}
         }
         ,{
-            "path" : "pages/my/history/history",
+            "path" : "pages/my/history-message/history-message",
             "style" : {}
         }
         ,{
@@ -108,11 +108,11 @@
             "style" : {}
         }
         ,{
-            "path" : "pages/my/change-login/change-login",
+            "path" : "pages/my/change-login-password/change-login-password",
             "style" : {}
         }
         ,{
-            "path" : "pages/my/change-pay/change-pay",
+            "path" : "pages/my/change-pay-password/change-pay-password",
             "style" : {}
         }
         ,{
@@ -169,6 +169,18 @@
         }
         ,{
             "path" : "pages/my/my-agent-invite/my-agent-invite",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/play/transfer-phone-amount/transfer-phone-amount",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/play/transfer-phone-number/transfer-phone-number",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/play/transfer-friend/transfer-friend",
             "style" : {}
         }
     ],

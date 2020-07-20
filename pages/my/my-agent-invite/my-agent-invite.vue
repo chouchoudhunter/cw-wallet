@@ -74,51 +74,36 @@
 		flex-direction: row;
 		align-items: center;
 		padding: 12px;
+		margin-bottom: 1px;
 		background-color: $uni-bg-color;
+		line-height: 2;
 		.img-name-money {
-			flex-grow: 1;
-				display: flex;
-			// margin: 13px 0 0 0;
-			// .img-text {
-			// 	display: flex;
-			// 	flex-direction: row;
-			// 	align-items: center;// }
-				.img {
-					width: 70px;
-					height: 70px;
-					background-color: #dedede;
-					border-radius: 5px;
-				
-				.neme {
-					margin-left: 10px;
-					line-height: 30px;
-	
-					h1 {
-						font-size: 16px;
-						color: #333333;
-					}
-	
-					p {
-						font-size: 12px;
-						color: #888888;
-					}
-				}
-			}
-		}
-		.location {
 			display: flex;
 			align-items: center;
-			margin-top: 10px;
-			image {
-				width: 12px;
-				height: 17px;
-				margin: 0 10px 0 0;
+			flex-grow: 1;
+			.img {
+				width: 60px;
+				height: 60px;
+				background-color: #dedede;
+				border-radius: 5px;
+				margin-right: 11px;
 			}
-	
-			p {
-				font-size: 12px;
-				color: #333333;
-			}
+			.name-money{
+				.name {
+					font-size: 16px;
+				}
+				.money{
+					font-size: 13px;
+					span{
+						color: #FF2121;
+					}
+				}	
+			}			
+		}
+		.tel-date{
+			font-size: 13px;
+			color: #666666;
+			text-align: right;
 		}
 	}
 }

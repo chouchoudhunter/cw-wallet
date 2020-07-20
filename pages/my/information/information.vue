@@ -22,13 +22,13 @@
 			//跳转到 修改登录密码
 			toChangeLogin(){
 				uni.navigateTo({
-					url: '../change-login/change-login'
+					url: '../change-login-password/change-login-password'
 				});
 			},
 			//跳转到 修改支付密码
 			toChangePay(){
 				uni.navigateTo({
-					url: '../change-pay/change-pay'
+					url: '../change-pay-password/change-pay-password'
 				});
 			},	
 						
