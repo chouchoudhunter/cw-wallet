@@ -27,7 +27,7 @@
 		</view>
 		<view class="collect" @click="collected()">
 			<image src="@/static/icon/my/collect.png"></image>
-			<p>收藏</p>
+			<p ref="aaa">收藏</p>
 		</view>
 	</view>
 </template>
@@ -42,7 +42,9 @@
 		methods:{
 			//按下显示已收藏
 			collected(){
-				
+				if(this.$refs.aaa.innerText=='收藏')
+					this.$refs.aaa.innerText='已收藏';
+				else this.$refs.aaa.innerText='收藏';
 			}
 		}
 	}
@@ -75,13 +77,12 @@
 	.img{
 		height: 175px;
 		margin-top: 20px20rpx;
-		background-color: #666666;
-		
+		background-color: #666666;		
 	}
 }
 .collect{
 	position: fixed;
-	bottom: 105px;
+	bottom: 80px;
 	right: 15px;
 	width: 50px;
 	height: 50px;

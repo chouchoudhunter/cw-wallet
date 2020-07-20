@@ -18,7 +18,7 @@
 			</view>
 		</view>
 		<view class="list">
-			<rectangle class="rect" leftText="申请成为商户"  @click="toNearbyShop()"></rectangle>
+			<rectangle class="rect" leftText="申请成为商户"  @click="toDoShop()"></rectangle>
 			<rectangle class="rect" leftText="申请成为推广代理" @click="toAgent()"></rectangle>
 			<rectangle class="rect" leftText="发布优惠券" ></rectangle>
 			<rectangle class="rect" leftText="帮助中心" @click="toHelp()"></rectangle>
@@ -45,6 +45,12 @@
 					url: '../my/change/change'
 				});
 			},
+			//跳转到 商家入驻
+			toDoShop(){
+				uni.navigateTo({
+					url: '../my/do-shop/do-shop'
+				});
+			},			
 			//跳转到帮助中心
 			toHelp(){
 				uni.navigateTo({
@@ -61,11 +67,6 @@
 			toMessage(){
 				uni.navigateTo({
 					url: '../my/leave-message/leave-message'
-				});
-			},
-			toNearbyShop(){
-				uni.navigateTo({
-					url: '../play/nearby-shops/nearby-shops'
 				});
 			},
 			//跳转到优惠券

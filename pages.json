@@ -139,6 +139,38 @@
             "path" : "pages/my/coupon/coupon",
             "style" : {}
         }
+        ,{
+            "path" : "pages/my/article-list/article-list",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/my/collected-list/collected-list",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/my/do-shop/do-shop",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/my/my-invite-code/my-invite-code",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/my/change-information/change-information",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/my/reply-message/reply-message",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/my/my-agent-shop/my-agent-shop",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/my/my-agent-invite/my-agent-invite",
+            "style" : {}
+        }
     ],
     "globalStyle" : {
         "navigationBarTextStyle" : "white",

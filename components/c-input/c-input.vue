@@ -48,6 +48,7 @@ export default {
 			default: '#333333'
 		},
 		//line box 两种样式
+		//box改成了box1 box2，box1{margin:10px 0}; box2{margin:1px 0}
 		cStyle: {
 			type: String,
 			default: 'line'
@@ -102,8 +103,29 @@ export default {
 		}
 	}
 }
-.box {
+.box1 {
 	margin: 10px 0;
+	.input {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		font-size: 14px;
+		padding: 12px;
+		.icon {
+			width: 15px;
+			height: 16px;
+			margin: 0 10px;
+		}
+		.box-text {
+			flex: 1;
+			font-size: 14px;
+			color: #888888;
+		}
+	}
+}
+.box2 {
+	margin: 1px 0;
 	.input {
 		display: flex;
 		flex-direction: row;
