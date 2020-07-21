@@ -8,13 +8,14 @@
 			</view>
 			<view class="item-coupon" @click="activeBtn(1)">
 				<view class="text">已使用</view>
-				<view :class="{'active-line':activeStatus[0]}"></view>
+				<view :class="{'active-line':activeStatus[1]}"></view>
 			</view>
 			<view class="item-coupon" @click="activeBtn(2)">
 				<view class="text">已过期</view>
-				<view :class="{'active-line':active}"></view>
+				<view :class="{'active-line':activeStatus[2]}"></view>
 			</view>
 		</view>
+		{{activeStatus[0]}}
 	</view>
 </template>
 
@@ -22,8 +23,9 @@
 export default {
 	data() {
 		return {
-			activeStatus:[true,false,false],
 			currentActive:0,
+			activeStatus:[true,false,false],
+			// activeStatus:[{bool:false},{bool:false},{bool:false}],
 			active:true,
 		};
 	},
