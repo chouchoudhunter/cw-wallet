@@ -66,10 +66,6 @@
             "style" : {}
         },
         {
-            "path" : "pages/play/transfer/transfer",
-            "style" : {}
-        },
-        {
             "path" : "pages/my/change/change",
             "style" : {}
         },
@@ -86,7 +82,7 @@
             "style" : {}
         }
         ,{
-            "path" : "pages/my/history/history",
+            "path" : "pages/my/history-message/history-message",
             "style" : {}
         }
         ,{
@@ -108,11 +104,11 @@
             "style" : {}
         }
         ,{
-            "path" : "pages/my/change-login/change-login",
+            "path" : "pages/my/change-login-password/change-login-password",
             "style" : {}
         }
         ,{
-            "path" : "pages/my/change-pay/change-pay",
+            "path" : "pages/my/change-pay-password/change-pay-password",
             "style" : {}
         }
         ,{
@@ -137,6 +133,66 @@
         }
         ,{
             "path" : "pages/my/coupon/coupon",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/my/article-list/article-list",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/my/collected-list/collected-list",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/my/do-shop/do-shop",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/my/my-invite-code/my-invite-code",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/my/change-information/change-information",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/my/reply-message/reply-message",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/my/my-agent-shop/my-agent-shop",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/my/my-agent-invite/my-agent-invite",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/play/transfer-phone-amount/transfer-phone-amount",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/play/transfer-phone-number/transfer-phone-number",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/play/transfer-friend/transfer-friend",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/play/notice/notice",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/play/set-amount/set-amount",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/play/transfer-accounts/transfer-accounts",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/play/message-notice/message-notice",
             "style" : {}
         }
     ],

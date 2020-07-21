@@ -41,7 +41,7 @@ export default {
 			menuActive: [true, false, false, false, false],
 			interval: 2000,
 			duration: 500,
-			nowlist: [{ picture: '', name: '1', address: '', distance: '' }, { picture: '', name: '2', address: '', distance: '' }],
+			nowlist: [],
 			shopLists: [
 				//推荐商家
 				[

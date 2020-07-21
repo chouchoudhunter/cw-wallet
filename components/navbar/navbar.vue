@@ -112,7 +112,7 @@ export default {
 			}
 			.slot-right {
 				width: 25%;
-				font-size: 16px;
+				font-size: 15px;
 				text-align: right;
 				padding-right: 14px;
 			}

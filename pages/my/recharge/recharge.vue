@@ -12,6 +12,9 @@
 				</view>
 			</view>
 			<view class="arrow">></view>
+			<uni-popup ref="popup" type="select">
+				<uni-popup-select></uni-popup-select>
+			</uni-popup>
 		</view>
 		<view class="amount">
 			<p>转账金额</p>
@@ -33,7 +36,7 @@
 				uni.navigateTo({
 					url: '../recharge-record/recharge-record'
 				});
-			}
+			},
 		}
 	}
 </script>

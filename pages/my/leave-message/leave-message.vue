@@ -8,9 +8,9 @@
 			<view class="text">	
 				<textarea maxlength="200" value="" placeholder="请输入内容..." />
 			</view>
-			<c-input inputText="*联系人" placeholder="请输入联系人" cStyle="box"></c-input>
-			<c-input inputText="*手机号" placeholder="请输入手机号" cStyle="box"></c-input>
-			<c-input inputText="*验证码" placeholder="请输入验证码" cStyle="box" :isGroup="true"></c-input>
+			<c-input inputText="*联系人" placeholder="请输入联系人" cStyle="box1"></c-input>
+			<c-input inputText="*手机号" placeholder="请输入手机号" cStyle="box1"></c-input>
+			<c-input inputText="*验证码" placeholder="请输入验证码" cStyle="box1" :isGroup="true"></c-input>
 			<c-button class="but">确认提交</c-button>			
 		</view>
 	</view>
@@ -27,7 +27,7 @@
 			//跳转到 历史留言
 			toHistory(){
 				uni.navigateTo({
-					url: '../history/history'
+					url: '../history-message/history-message'
 				});
 			}
 		}

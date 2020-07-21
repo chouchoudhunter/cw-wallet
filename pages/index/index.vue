@@ -13,14 +13,32 @@
 		</view>
 		<view class="quick-link">
 			<ul>
-				<li class="link-item" @click="scan()"></li>
-				<li class="link-item"></li>
-				<li class="link-item"></li>
+				<li class="link-item" @click="scan()">
+					<image src="../../static/icon/index/scan.png" mode=""></image>
+					<view class="title">扫一扫</view>
+				</li>
+				<li class="link-item" @click="toReceive()">
+					<image src="../../static/icon/index/receive.png" mode=""></image>
+					<view class="title">收款</view>
+				</li>
+				<li class="link-item" @click="toPay()">
+					<image src="../../static/icon/index/pay.png" mode=""></image>
+					<view class="title">付款</view>
+				</li>
 			</ul>
 			<ul>
-				<li class="link-item"></li>
-				<li class="link-item"></li>
-				<li class="link-item"></li>
+				<li class="link-item" @click="toTransfer()">
+					<image src="../../static/icon/index/transfer.png" mode=""></image>
+					<view class="title">转账</view>
+				</li>
+				<li class="link-item" @click="toNearby()">
+					<image src="../../static/icon/index/nearby.png" mode=""></image>
+					<view class="title">附近优惠</view>
+				</li>
+				<li class="link-item" @click="toNotice()">
+					<image src="../../static/icon/index/notice.png" mode=""></image>
+					<view class="title">通知</view>
+				</li>
 			</ul>
 		</view>
 		<view class="discount">
@@ -89,6 +107,36 @@ export default {
 			uni.navigateTo({
 				url: '../register/login/login'
 			});
+		},
+		//跳转到 收款
+		toReceive() {
+			uni.navigateTo({
+				url: '../play/receive-code/receive-code'
+			});
+		},
+		//跳转到 付款
+		toPay() {
+			uni.navigateTo({
+				url: '../play/pay-code/pay-code'
+			});
+		},
+		//跳转到 转账
+		toTransfer() {
+			uni.navigateTo({
+				url: '../play/transfer-accounts/transfer-accounts'
+			});
+		},
+		//跳转到 附近商家
+		toNearby() {
+			uni.navigateTo({
+				url: '../play/nearby-shops/nearby-shops'
+			});
+		},
+		//跳转到 消息通知
+		toNotice() {
+			uni.navigateTo({
+				url: '../play/message-notice/message-notice'
+			});
 		}
 	}
 };
@@ -135,12 +183,16 @@ export default {
 		justify-content: center;
 		margin-bottom: 20px;
 		.link-item {
-			width: 60px;
-			height: 60px;
-			background-color: red;
-			border-radius: 10px;
-			text-align: center;
 			margin: 0 25px;
+			text-align: center;
+			image{
+				width: 54px;
+				height: 54px;
+				border-radius: 10px;
+			}
+			.title{
+				font-size: 13px;
+			}
 		}
 	}
 }

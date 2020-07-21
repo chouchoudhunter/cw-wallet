@@ -2,7 +2,7 @@
 	<view>
 		<view class="list-go" @click="_onClick">
 			<view class="img-text">									
-				<image class="img" :src="'../../../static/recicon/'+iconSrc+'.png'" v-if="leftIcon" mode=""></image>	
+				<image class="img" :src='"@/static/recicon/"+iconSrc+".png"' v-if="leftIcon" mode=""></image>	
 				<p>{{leftText}}</p>
 			</view>
 			<view class="right">				
@@ -60,9 +60,9 @@
 			flex-grow: 1;
 			
 				.img{					
-					width: 20px;
-					height: 20px;
-					margin-right: 15px;
+					width: 16px;
+					height: 16px;
+					margin-right: 13px;
 				
 			}
 			p {				
