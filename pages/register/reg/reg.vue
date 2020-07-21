@@ -4,7 +4,9 @@
 		<c-input inputText="姓名" cStyle="box1" placeholder="请输入姓名"></c-input>
 		<c-input inputText="身份证号" cStyle="box1" placeholder="请输入身份证号"></c-input>
 		<c-input inputText="手机号" cStyle="box1" placeholder="请输入手机号"></c-input>
-		<c-input inputText="验证码" cStyle="box1" placeholder="请输入验证码" :isGroup="true"></c-input>
+		<c-input inputText="验证码" cStyle="box1" placeholder="请输入验证码">
+			<c-button slot="right" cRadius="0" cFontSize="15px" cHeight="24px" cWidth="80px">获取验证码</c-button>
+		</c-input>
 		<c-input inputText="设置密码" cStyle="box1" placeholder="请输入密码"></c-input>
 		<c-input inputText="确认密码" cStyle="box1" placeholder="请确认密码"></c-input>
 		<c-button class="reg-btn">完成注册</c-button>

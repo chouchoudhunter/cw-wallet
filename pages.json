@@ -195,6 +195,10 @@
             "path" : "pages/play/message-notice/message-notice",
             "style" : {}
         }
+        ,{
+            "path" : "pages/play/forget-pay-password/forget-pay-password",
+            "style" : {}
+        }
     ],
     "globalStyle" : {
         "navigationBarTextStyle" : "white",

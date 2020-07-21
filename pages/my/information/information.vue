@@ -2,7 +2,7 @@
 	<view id="personInformation">
 		<navbar title="个人信息" :backBtn="true"></navbar>
 		<view class="list">			
-			<rectangle  leftText="我的二维码" :leftIcon="false"></rectangle>
+			<rectangle  leftText="我的二维码" @click="toMyCode()" :leftIcon="false" ></rectangle>
 			<rectangle  leftText="个人信息修改" :leftIcon="false"></rectangle>
 			<rectangle  leftText="登录密码修改" @click="toChangeLogin()" :leftIcon="false" ></rectangle>
 			<rectangle  leftText="支付密码修改" @click="toChangePay()" :leftIcon="false"></rectangle>
@@ -19,6 +19,12 @@
 			};
 		},
 		methods:{
+			//跳转到 我的二维码
+			toMyCode(){
+				uni.navigateTo({
+					url: '../../play/my-code/my-code'
+				});
+			},
 			//跳转到 修改登录密码
 			toChangeLogin(){
 				uni.navigateTo({
