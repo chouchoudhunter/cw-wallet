@@ -3,7 +3,7 @@
 		<navbar title="修改支付密码" :backBtn="true"></navbar>
 		<c-input iconImg="user" placeholder="请输入新支付密码"></c-input>
 		<c-input iconImg="lock" placeholder="请确认支付密码"></c-input>
-		<c-button class="submit">确认</c-button>
+		<c-button class="submit">确认确认</c-button>
 	</view>
 </template>
 
