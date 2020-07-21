@@ -78,7 +78,7 @@ export default {
 .c-input-content{
 	display: flex;
 	flex-direction: row;
-	background-color: #FFFFFF;
+	// background-color: #FFFFFF;
 	.input{
 		flex-grow: 1;
 	}
@@ -104,6 +104,7 @@ export default {
 	}
 }
 .box1 {
+	background-color: #FFFFFF;
 	margin: 10px 0;
 	.input {
 		display: flex;
@@ -125,6 +126,7 @@ export default {
 	}
 }
 .box2 {
+	background-color: #FFFFFF;
 	margin: 1px 0;
 	.input {
 		display: flex;

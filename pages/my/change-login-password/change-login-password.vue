@@ -19,8 +19,8 @@
 </script>
 
 <style lang="scss">
-#change-login{
-	padding: 20px 10%;
+#change-login-password{
+	padding: 20px 30px;
 	background-color: $uni-bg-color;
 	height: 100%;
 }

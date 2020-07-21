@@ -5,7 +5,7 @@
 			<p class="text">长城钱包扫一扫，向我付钱</p>
 			<view class="qr-code"></view>
 			<view class="set-save">
-				<view class="set">设置金额</view>
+				<view class="set" @click="toSetAmount()">设置金额</view>
 				<view class="save">保存图片</view>
 			</view>
 			<rectangle  leftText="收款记录" iconSrc="recevie" @click="toReceiveRecord()"></rectangle>
@@ -26,6 +26,12 @@
 				uni.navigateTo({
 					url: '../receive-record/receive-record'
 				});				
+			},
+			//跳转到 设置金额
+			toSetAmount(){
+				uni.navigateTo({
+					url: '../set-amount/set-amount'
+				});	
 			}
 		}
 	}

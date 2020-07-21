@@ -27,7 +27,7 @@
 			//跳转到 历史留言
 			toHistory(){
 				uni.navigateTo({
-					url: '../history/history'
+					url: '../history-message/history-message'
 				});
 			}
 		}

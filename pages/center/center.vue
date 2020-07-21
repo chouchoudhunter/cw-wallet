@@ -18,11 +18,11 @@
 			</view>
 		</view>
 		<view class="list">
-			<rectangle class="rect" leftText="申请成为商户"  @click="toDoShop()"></rectangle>
-			<rectangle class="rect" leftText="申请成为推广代理" @click="toAgent()"></rectangle>
-			<rectangle class="rect" leftText="发布优惠券" ></rectangle>
-			<rectangle class="rect" leftText="帮助中心" @click="toHelp()"></rectangle>
-			<rectangle class="rect" leftText="我的工单" @click="toMessage()"></rectangle>
+			<rectangle class="rect" leftText="申请成为商户" iconSrc="shop" @click="toDoShop()"></rectangle>
+			<rectangle class="rect" leftText="申请成为推广代理" iconSrc="agent" @click="toAgent()"></rectangle>
+			<rectangle class="rect" leftText="发布优惠券" iconSrc="discount" ></rectangle>
+			<rectangle class="rect" leftText="帮助中心" iconSrc="help" @click="toHelp()"></rectangle>
+			<rectangle class="rect" leftText="我的工单" iconSrc="work" @click="toMessage()"></rectangle>
 		</view>
 	</view>
 </template>

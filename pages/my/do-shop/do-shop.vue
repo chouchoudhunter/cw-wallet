@@ -57,6 +57,6 @@
 
 
 .but {
-	margin: 50px 12px 0;
+	margin: 50px 12px 20px 12px;
 }
 </style>

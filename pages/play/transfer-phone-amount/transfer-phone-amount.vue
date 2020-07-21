@@ -3,7 +3,7 @@
 		<navbar title="手机号转账" :backBtn="true"></navbar>
 		<view class="amount">
 			<p class="aaa">转账金额</p>
-			<c-input inputText="¥" placeholder="" cFontSize="20px" ref="name">
+			<c-input inputText="¥" placeholder="" cFontSize="20px">
 				<image slot="right" src="../../../static/icon/close.png" @click="clearNum()"></image>	
 			</c-input>
 		</view>

@@ -1,6 +1,6 @@
 <template>
 	<view>
-		<icon-name iconSrc="scan" name="周边游/旅游"></icon-name>
+		<navbar title="转账" :backBtn="true"></navbar>
 	</view>
 </template>
 

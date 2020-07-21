@@ -66,10 +66,6 @@
             "style" : {}
         },
         {
-            "path" : "pages/play/transfer/transfer",
-            "style" : {}
-        },
-        {
             "path" : "pages/my/change/change",
             "style" : {}
         },
@@ -181,6 +177,22 @@
         }
         ,{
             "path" : "pages/play/transfer-friend/transfer-friend",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/play/notice/notice",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/play/set-amount/set-amount",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/play/transfer-accounts/transfer-accounts",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/play/message-notice/message-notice",
             "style" : {}
         }
     ],
