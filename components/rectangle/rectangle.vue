@@ -74,7 +74,7 @@
 			align-items: center;
 			p{
 				margin: 0 16px 0 0;
-				font-size: 15px;
+				font-size: 14px;
 				line-height: 44px;
 				color: #666666;
 			}

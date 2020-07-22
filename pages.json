@@ -199,6 +199,18 @@
             "path" : "pages/play/forget-pay-password/forget-pay-password",
             "style" : {}
         }
+        ,{
+            "path" : "pages/my/my-shop/my-shop",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/my/my-branch/my-branch",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/my/bank-card-list/bank-card-list",
+            "style" : {}
+        }
     ],
     "globalStyle" : {
         "navigationBarTextStyle" : "white",
