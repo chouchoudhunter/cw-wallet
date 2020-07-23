@@ -33,9 +33,9 @@
 				</view>
 			</view>
 		</view>
-		<view class="add-comment">
-			<input type="text" value="" placeholder="请输入"/>
-			<view class="emoticon">
+		<view class="comment-back">
+			<view class="add-comment" >
+				<input type="text" value="" placeholder="请输入"/>
 				<image src="../../../static/icon/emoticon.png" mode=""></image>
 			</view>
 		</view>
@@ -61,6 +61,7 @@
 	.time{
 		font-size: 13px;
 		color: #666666;
+		margin-bottom: 5px;
 	}
 	.content{
 		font-size: 14px;
@@ -84,6 +85,7 @@
 		border-bottom: solid 0.5px #E0E0E2;
 	}
 	.discuss-list{
+		margin-bottom: 63px;
 		.one-discuss{
 			border-bottom: solid 0.5px #E0E0E2;
 			padding: 10px 0 13px 0;
@@ -121,26 +123,28 @@
 		}				
 	}		
 }
-.add-comment{
-	display: flex;
-	align-items: center;
-	height: 40px;
-	background-color: #FFFFFF;
-	// border-radius: 20px;
-	// margin: 0 12px 0 12px;
-	padding: 0 11px;
+.comment-back{
 	position: fixed;
 	bottom: 0;
 	left: 0;
 	right: 0;
-	input{
-		flex-grow: 1;
-	}
-	.emoticon{
-		image{
-			width: 20px;
-			height: 20px;
+	background-color: $cw-background-grey;
+	padding: 10px 12px;
+	.add-comment{
+		display: flex;
+		align-items: center;
+		height: 40px;
+		background-color: #FFFFFF;
+		border-radius: 20px;
+		padding: 0 11px;
+		input{
+			flex-grow: 1;
 		}
+		image{
+			width: 22px;
+			height: 22px;
+			margin-left: 8px;
+		}	
 	}
 }
 </style>

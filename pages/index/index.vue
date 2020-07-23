@@ -13,7 +13,7 @@
 		</view>
 		<view class="quick-link">
 			<ul>
-				<li class="link-item" @click="scan()">
+				<li class="link-item" @click="toScanCode()">
 					<image src="../../static/icon/index/scan.png" mode=""></image>
 					<view class="title">扫一扫</view>
 				</li>
@@ -103,9 +103,10 @@ export default {
 	},
 	onLoad() {},
 	methods: {
-		scan() {
+		//跳转到 扫一扫
+		toScanCode() {
 			uni.navigateTo({
-				url: '../register/login/login'
+				url: '../my/scan-qr-code/scan-qr-code'
 			});
 		},
 		//跳转到 收款

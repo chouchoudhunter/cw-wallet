@@ -3,6 +3,7 @@
 		<view class="c-input-content">
 			<view class="input">
 				<image v-if="iconImg" :src="'../../../static/icon/' + iconImg + '.png'" class="icon"></image>
+				<view class="left-xing" v-if="leftXing">*</view>
 				<view v-if="inputText" class="input-text">{{ inputText }}</view>
 				<input :disabled="cDisabled" type="text" :placeholder="placeholder" :style="{'text-align':cTextAlign,'font-size':cFontSize,'color':cColor}" class="box-text" />
 			</view>
@@ -21,6 +22,11 @@ export default {
 		iconImg: {
 			type: String,
 			default: ''
+		},
+		//左边的红*
+		leftXing:{
+			type:Boolean,
+			default:false
 		},
 		//左边文字
 		inputText: {
@@ -118,6 +124,9 @@ export default {
 			height: 16px;
 			margin: 0 10px;
 		}
+		.left-xing{
+			color: #FF2121;
+		}
 		.box-text {
 			flex: 1;
 			font-size: 14px;
@@ -139,6 +148,9 @@ export default {
 			width: 15px;
 			height: 16px;
 			margin: 0 10px;
+		}
+		.left-xing{
+			color: #FF2121;
 		}
 		.box-text {
 			flex: 1;

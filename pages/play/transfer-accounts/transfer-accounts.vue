@@ -2,7 +2,7 @@
 	<view id="transfer">
 		<navbar title="转账" :backBtn="true"></navbar>
 		<view class="style">
-			<view class="item">
+			<view class="item" @click="toFriend()">
 				<image src="../../../static/icon/friend.png" mode=""></image>
 				<view class="title">选择好友</view>
 			</view>
@@ -22,6 +22,13 @@
 			};
 		},
 		methods:{
+			//跳转到 好友列表
+			toFriend(){
+				// alert("123");
+				uni.navigateTo({
+					url: '../../member/friend/friend'
+				});
+			},
 			//跳转到 转到对方账户
 			toPhone(){
 				uni.navigateTo({

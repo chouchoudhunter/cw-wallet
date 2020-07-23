@@ -1,5 +1,5 @@
 <template>
-	<view>
+	<view id="set-amount">
 		<navbar title="设置金额" :backBtn="true"></navbar>
 		<c-input class="input" cStyle="box1" inputText="金额" placeholder="" cFontSize="20px">
 			<image slot="right" src="../../../static/icon/close.png" mode=""></image>
@@ -18,6 +18,9 @@
 </script>
 
 <style lang="scss">
+#set-amount{
+	padding-top: 10px;
+}
 .input{
 	image{
 		width: 16px;

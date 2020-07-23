@@ -6,7 +6,7 @@
 				<image src="../../../static/icon/clock.png" mode=""></image>
 				<view class="time">2020/06/07 15:23</view>
 			</view>
-			<view class="notice-content">
+			<view class="notice-content" @click="toNotice()">
 				<view class="top">
 					<view class="title">公告</view>
 				</view>
@@ -51,6 +51,14 @@
 			return {
 				
 			};
+		},
+		methods:{
+			//跳转到 公告
+			toNotice(){
+				uni.navigateTo({
+					url: '../notice/notice'
+				});
+			}
 		}
 	}
 </script>

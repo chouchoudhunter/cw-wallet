@@ -8,8 +8,17 @@
 		</view>
 		<c-input inputText="统一社会信用代码" placeholder="统一社会信用代码" cTextAlign="right" cStyle="box2"></c-input>
 		<c-input inputText="店铺名称" placeholder="请输入店铺名称" cTextAlign="right" cStyle="box2"></c-input>
-	店铺地区<br>店铺定位 
-		
+		<c-input inputText="店铺地区" placeholder="" :cDisabled="true" cStyle="box2">
+			<select class="select-style" slot="right">
+				<option selected="selected">请选择省市</option>
+			</select>	
+		</c-input>
+		<c-input inputText="店铺定位" placeholder="" :cDisabled="true" cStyle="box2">
+			<view class="location" slot="right">
+				金华寺南路（成都市金牛区）
+				<image class="arrow" src="../../../static/icon/member/arrows.png" mode=""></image>
+			</view>
+		</c-input>
 		<c-input inputText="经营类型" placeholder="请输入经营类型" cTextAlign="right" cStyle="box2"></c-input>
 		<c-input inputText="营业时间" placeholder="请输入请输入营业时间" cTextAlign="right" cStyle="box2"></c-input>
 		<c-input inputText="服务电话" placeholder="请输入商家服务电话" cTextAlign="right" cStyle="box2"></c-input>
@@ -54,8 +63,28 @@
 		margin-top: 17px;
 	}
 }
-
-
+.select-style{
+	margin-right: 14px;
+	font-size: 14px;
+	color: #333333;
+	padding-right: 14px;
+	border: none;
+	outline: none;
+	// 去掉默认的下拉三角
+	appearance:none;  
+	-moz-appearance:none;  
+	-webkit-appearance:none;
+	// 添加下拉三角图标
+	background: url("../../../static/icon/my/select.png") no-repeat right center;
+	background-size: 8px 6px;    
+}
+.location{
+	font-size: 14px;
+	.arrow{
+		width: 6px;
+		height: 12px;
+	}
+}
 .but {
 	margin: 50px 12px 20px 12px;
 }

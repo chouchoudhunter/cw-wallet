@@ -1,6 +1,6 @@
 <template>
 	<view id="receive-record">
-		<navbar title="付款记录" :backBtn="true"></navbar>
+		<navbar title="收款记录" :backBtn="true"></navbar>
 		<view class="list">
 			<view class="list-left">
 				<p class="p1">交易收款-**意</p>

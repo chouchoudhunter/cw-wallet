@@ -211,6 +211,10 @@
             "path" : "pages/my/bank-card-list/bank-card-list",
             "style" : {}
         }
+        ,{
+            "path" : "pages/my/scan-qr-code/scan-qr-code",
+            "style" : {}
+        }
     ],
     "globalStyle" : {
         "navigationBarTextStyle" : "white",
