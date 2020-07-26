@@ -1,0 +1,1 @@
+<view id="scan"><navbar vue-id="52ab535a-1" title="扫一扫" backBtn="{{true}}" bind:__l="__l"></navbar><view class="content"><view class="item"><view class="img"></view><view class="text"><view class="_h1">成吉思汗</view><view class="_p">昵称: kdfgusgfjbjdf</view></view></view><c-button vue-id="52ab535a-2" bind:__l="__l" vue-slots="{{['default']}}">同意</c-button></view></view>

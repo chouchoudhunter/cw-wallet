@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "navbar": "/components/navbar/navbar",
+    "rectangle": "/components/rectangle/rectangle",
+    "c-button": "/components/c-button/c-button"
+  }
+}

@@ -13,6 +13,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import './uni.scss';
 /*每个页面公共css */
 uni-page-body,
 html,

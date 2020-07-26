@@ -1,6 +1,6 @@
 <template>
 	<view id="sacn-qr-code">
-		<navbar title="" :backBtn="true" backColor="transparent"></navbar>
+		<navbar title="扫一扫" :backBtn="true" backColor="transparent"></navbar>
 		<view class="content">
 			<view class="camera"></view>
 			<view class="hint">将二维码/条码放入框内，即可自动扫描</view>
@@ -36,7 +36,7 @@
 	}
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 	page{
 		background-color: #494949;
 	}

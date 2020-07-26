@@ -1,0 +1,1 @@
+<view><view class="select-content"><view class="title">{{title}}</view><view class="hr"></view><view class="content"><slot></slot></view></view></view>

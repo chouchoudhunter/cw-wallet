@@ -1,0 +1,1 @@
+<view><navbar vue-id="4173fda1-1" title="绑定邮箱" backBtn="{{true}}" bind:__l="__l"></navbar><c-input class="in" vue-id="4173fda1-2" cTextAlign="right" inputText="验证码" cStyle="box1" placeholder="请输入验证码" bind:__l="__l"></c-input><c-button class="but" vue-id="4173fda1-3" cFontSize="17px" bind:__l="__l" vue-slots="{{['default']}}">确定</c-button></view>

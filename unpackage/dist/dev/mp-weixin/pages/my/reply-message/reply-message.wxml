@@ -1,0 +1,1 @@
+<view><navbar vue-id="69eb4b97-1" title="留言回复" backBtn="{{true}}" bind:__l="__l"></navbar><view class="text"><textarea maxlength="200" value="" placeholder="请输入留言回复"></textarea></view><c-button class="but" vue-id="69eb4b97-2" bind:__l="__l" vue-slots="{{['default']}}">发送</c-button></view>

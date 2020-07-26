@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "navbar": "/components/navbar/navbar",
+    "c-input": "/components/c-input/c-input",
+    "uni-icons": "/components/uni-icons/uni-icons",
+    "uni-popup": "/components/uni-popup/uni-popup",
+    "c-button": "/components/c-button/c-button",
+    "uni-popup-select": "/components/uni-popup/uni-popup-select"
+  }
+}

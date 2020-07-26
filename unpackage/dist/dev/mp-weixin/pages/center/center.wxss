@@ -12,6 +12,7 @@
  * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
  */
 /* 颜色变量 */
+/*背景灰色*/
 /* 行为相关颜色 */
 /* 文字基本颜色 */
 /* 背景颜色 */
@@ -24,23 +25,6 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.hr {
-  border-bottom: 1px solid #dddddd;
-}
-.navbar {
-  position: relative;
-  padding: 5px 10px;
-  background-color: #ff0004;
-  color: #ffffff;
-}
-.navbar .title {
-  text-align: center;
-}
-.navbar .right {
-  position: absolute;
-  top: 5px;
-  right: 10px;
-}
 .header {
   display: -webkit-box;
   display: -webkit-flex;
@@ -53,19 +37,22 @@
   -webkit-align-items: center;
           align-items: center;
   padding: 40px 0;
-  background-color: #ff0004;
+  background-color: #FF2121;
   color: #ffffff;
 }
 .header .img {
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   background-color: #e3e3e3;
   border-radius: 6px;
+}
+.header .name {
+  font-size: 17px;
+  margin-top: 9px;
 }
 .info {
   text-align: center;
   background-color: #FFFFFF;
-  padding-top: 20px;
 }
 .info .info-row {
   display: -webkit-box;
@@ -78,7 +65,8 @@
   -webkit-box-pack: center;
   -webkit-justify-content: center;
           justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  padding: 20px 0;
 }
 .info .info-row .info-item {
   -webkit-box-flex: 1;
@@ -86,39 +74,10 @@
           flex-grow: 1;
 }
 .info .info-row .info-item .title {
-  font-size: 16px;
+  font-size: 12px;
   color: #7c7c7c;
 }
-.list {
-  margin-top: 30px;
-}
-.list .list-item {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-          align-items: center;
-  padding: 10px 15px;
-  background-color: #FFFFFF;
-}
-.list .list-item .icon {
-  width: 30px;
-  height: 30px;
-  background-color: #C0C0C0;
-}
-.list .list-item .title {
-  font-size: 18px;
-  margin-left: 10px;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-          flex-grow: 1;
-}
-.list .list-item .go {
-  color: #C0C0C0;
+.list .rect {
+  margin-bottom: -4px;
 }
 

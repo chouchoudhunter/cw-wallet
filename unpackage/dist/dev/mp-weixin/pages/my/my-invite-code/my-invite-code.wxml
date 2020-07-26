@@ -1,0 +1,1 @@
+<view><navbar vue-id="28bc4a61-1" title="我的邀请码" backBtn="{{true}}" bind:__l="__l" vue-slots="{{['right']}}"><view slot="right">分享到微信</view></navbar><view class="back"><view class="invite-code">邀请码</view><image class="img" src mode></image><view class="myself">我的专属邀请码</view><view class="number">1652781931</view></view><button class="save-img">保存图片</button></view>

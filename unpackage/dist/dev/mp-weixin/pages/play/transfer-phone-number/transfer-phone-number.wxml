@@ -1,0 +1,1 @@
+<view><navbar class="nav" vue-id="0485de43-1" title="转到对方账户" backBtn="{{true}}" bind:__l="__l"></navbar><c-input vue-id="0485de43-2" placeholder="请输入转入的手机号" cStyle="box1" bind:__l="__l"></c-input><c-button class="but" bind:click="__e" vue-id="0485de43-3" data-event-opts="{{[['^click',[['toTransfer']]]]}}" bind:__l="__l" vue-slots="{{['default']}}">确认转账</c-button></view>

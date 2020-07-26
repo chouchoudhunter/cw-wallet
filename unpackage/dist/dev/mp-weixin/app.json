@@ -1,17 +1,71 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/member/member",
-    "pages/center/center"
+    "pages/member/friend/friend",
+    "pages/center/center",
+    "pages/register/login/login",
+    "pages/register/reg/reg",
+    "pages/register/find/find",
+    "pages/member/nearby/nearby",
+    "pages/member/scan/scan",
+    "pages/member/add-friend/add-friend",
+    "pages/my/help-center/help-center",
+    "pages/my/information/information",
+    "pages/member/shop-for/shop-for",
+    "pages/my/bind-email/bind-email",
+    "pages/my/do-agent/do-agent",
+    "pages/my/recharge/recharge",
+    "pages/my/recharge-record/recharge-record",
+    "pages/my/change/change",
+    "pages/my/withdraw-record/withdraw-record",
+    "pages/my/withdraw/withdraw",
+    "pages/my/leave-message/leave-message",
+    "pages/my/history-message/history-message",
+    "pages/play/my-code/my-code",
+    "pages/my/article-details/article-details",
+    "pages/play/nearby-shops/nearby-shops",
+    "pages/my/add-bank-card/add-bank-card",
+    "pages/my/email-code/email-code",
+    "pages/my/change-login-password/change-login-password",
+    "pages/my/change-pay-password/change-pay-password",
+    "pages/play/shop-details/shop-details",
+    "pages/play/receive-code/receive-code",
+    "pages/play/pay-code/pay-code",
+    "pages/play/pay-record/pay-record",
+    "pages/play/receive-record/receive-record",
+    "pages/my/coupon/coupon",
+    "pages/my/article-list/article-list",
+    "pages/my/collected-list/collected-list",
+    "pages/my/do-shop/do-shop",
+    "pages/my/my-invite-code/my-invite-code",
+    "pages/my/change-information/change-information",
+    "pages/my/reply-message/reply-message",
+    "pages/my/my-agent-shop/my-agent-shop",
+    "pages/my/my-agent-invite/my-agent-invite",
+    "pages/play/transfer-phone-amount/transfer-phone-amount",
+    "pages/play/transfer-phone-number/transfer-phone-number",
+    "pages/play/transfer-friend/transfer-friend",
+    "pages/play/notice/notice",
+    "pages/play/set-amount/set-amount",
+    "pages/play/transfer-accounts/transfer-accounts",
+    "pages/play/message-notice/message-notice",
+    "pages/play/forget-pay-password/forget-pay-password",
+    "pages/my/my-shop/my-shop",
+    "pages/my/my-branch/my-branch",
+    "pages/my/bank-card-list/bank-card-list",
+    "pages/my/scan-qr-code/scan-qr-code"
   ],
   "subPackages": [],
   "window": {
     "navigationBarTextStyle": "white",
     "navigationBarTitleText": "uni-app",
     "navigationBarBackgroundColor": "#F8F8F8",
-    "backgroundColor": "#F8F8F8"
+    "backgroundColor": "#F8F8F8",
+    "navigationStyle": "custom"
   },
   "tabBar": {
+    "iconWidth": "21px",
+    "fontSize": "16px",
     "list": [
       {
         "pagePath": "pages/index/index",
@@ -20,7 +74,7 @@
         "selectedIconPath": "static/icon/index_.png"
       },
       {
-        "pagePath": "pages/member/member",
+        "pagePath": "pages/member/friend/friend",
         "text": "会员",
         "iconPath": "static/icon/member.png",
         "selectedIconPath": "static/icon/member_.png"
@@ -32,7 +86,6 @@
         "selectedIconPath": "static/icon/my_.png"
       }
     ],
-    "fontSize": "16px",
     "backgroundColor": "#ffffff",
     "selectedColor": "#d81e06"
   },

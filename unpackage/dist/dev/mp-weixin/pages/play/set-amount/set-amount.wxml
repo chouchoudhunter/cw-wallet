@@ -1,0 +1,1 @@
+<view id="set-amount"><navbar vue-id="353cec79-1" title="设置金额" backBtn="{{true}}" bind:__l="__l"></navbar><c-input class="input" vue-id="353cec79-2" cStyle="box1" inputText="金额" placeholder cFontSize="20px" bind:__l="__l" vue-slots="{{['right']}}"><image slot="right" src="../../../static/icon/close.png" mode></image></c-input></view>

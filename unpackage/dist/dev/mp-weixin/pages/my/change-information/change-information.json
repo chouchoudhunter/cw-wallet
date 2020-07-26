@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "navbar": "/components/navbar/navbar",
+    "c-input": "/components/c-input/c-input",
+    "uni-icons": "/components/uni-icons/uni-icons",
+    "c-button": "/components/c-button/c-button"
+  }
+}

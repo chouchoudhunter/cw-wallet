@@ -1,0 +1,1 @@
+<view id="my-code"><navbar vue-id="5cc77a7b-1" title="我的二维码" backBtn="{{true}}" backColor="transparent" bind:__l="__l"></navbar><view class="img-name"><view class="img"></view><view class="name">成吉思汗</view></view><view class="background"><view class="code"></view></view></view>

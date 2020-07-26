@@ -1,0 +1,1 @@
+<view><view data-event-opts="{{[['tap',[['_onClick',['$event']]]]]}}" class="c-button" style="{{'border-radius:'+(cRadius)+';'+('font-size:'+(cFontSize)+';')+('height:'+(cHeight)+';')+('line-height:'+(cHeight)+';')+('width:'+(cWidth)+';')}}" bindtap="__e"><slot></slot></view></view>

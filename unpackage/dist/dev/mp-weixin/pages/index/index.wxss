@@ -12,6 +12,7 @@
  * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
  */
 /* 颜色变量 */
+/*背景灰色*/
 /* 行为相关颜色 */
 /* 文字基本颜色 */
 /* 背景颜色 */
@@ -24,15 +25,33 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
+.background-white {
+  background-color: #ffffff;
+  padding-top: 10px;
+}
 .slider {
   margin: 10px 15px;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0px 0px 8px 0px #9C9C9C;
+  box-shadow: 0px 0px 8px 0px #9c9c9c;
 }
 .slider .swiper-item {
   background-color: #ececec;
   height: 100%;
+}
+.top-bg {
+  background-color: #FF2121;
+  height: 300px;
+  width: 200%;
+  border-radius: 50%;
+  position: absolute;
+  top: -150px;
+  margin-left: -50%;
+}
+#navbar-icon {
+  width: 18px;
+  height: 18px;
+  margin-left: 2px;
 }
 .quick-link {
   display: -webkit-box;
@@ -63,15 +82,16 @@
   margin-bottom: 20px;
 }
 .quick-link ._ul .link-item {
-  width: 60px;
-  height: 60px;
-  background-color: #f3f3f3;
-  border-radius: 10px;
-  text-align: center;
   margin: 0 25px;
+  text-align: center;
 }
-.discount .scroll {
-  background-color: #ebebeb;
+.quick-link ._ul .link-item image {
+  width: 54px;
+  height: 54px;
+  border-radius: 10px;
+}
+.quick-link ._ul .link-item .title {
+  font-size: 13px;
 }
 .discount .scroll .scroll-view-item {
   display: -webkit-box;

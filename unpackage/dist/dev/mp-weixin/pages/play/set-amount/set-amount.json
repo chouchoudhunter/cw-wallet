@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "navbar": "/components/navbar/navbar",
+    "c-input": "/components/c-input/c-input"
+  }
+}

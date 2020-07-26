@@ -30,7 +30,11 @@
 </script>
 
 <style lang="scss">
+	page{
+		height: 100%;
+	}
 #pay-record{
+	height: 100%;
 	background-color: $cw-base-color;
 	.list{
 			display: flex;

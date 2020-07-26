@@ -34,6 +34,9 @@
 </script>
 
 <style lang="scss">
+	page{
+		height: 100%;
+	}
 #pay-code{
 	background-color: $cw-base-color;
 	height: 100%;
@@ -55,7 +58,6 @@
 			}
 		}
 		.bar-code{
-			width: 320px;
 			height: 100px;
 			margin: 0 auto;
 			background-color: #C0C0C0;

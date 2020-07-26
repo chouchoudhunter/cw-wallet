@@ -35,8 +35,12 @@
 </script>
 
 <style lang="scss">
+	page{
+		height: 100%;
+	}
 #receive-record{
 	background-color: $cw-base-color;
+	height: 100%;
 	.list{
 			display: flex;
 			align-items: center;
