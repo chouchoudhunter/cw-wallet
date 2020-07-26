@@ -1,7 +1,7 @@
 {
-    "name" : "wallet",
+    "name" : "长城钱包",
     "appid" : "__UNI__0A2FB11",
-    "description" : "",
+    "description" : "长城钱包 测试包",
     "versionName" : "1.0.0",
     "versionCode" : "100",
     "transformPx" : false,
