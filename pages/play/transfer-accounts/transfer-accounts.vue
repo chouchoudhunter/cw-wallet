@@ -39,9 +39,11 @@
 	}
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+	page{
+		background-color: $uni-bg-color;
+	}
 #transfer{
-	background-color: $uni-bg-color;
 	height: 100%;
 	.style{
 		display: flex;

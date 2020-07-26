@@ -37,7 +37,10 @@
 	}
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+	page{
+		height: 100%;
+	}
 #receive-code{
 	background-color: $cw-base-color;
 	height: 100%;

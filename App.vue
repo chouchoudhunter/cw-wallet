@@ -17,7 +17,9 @@ export default {
 uni-page-body,
 html,
 body {
-	height: 100%;
+	background-color: $cw-background-grey;
+	letter-spacing: 1px;
+	color: $uni-text-color;
 }
 
 </style>

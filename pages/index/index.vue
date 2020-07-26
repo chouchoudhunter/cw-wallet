@@ -1,46 +1,50 @@
 <template>
 	<view>
-		<view class="top-bg"></view>
 		<navbar title="吃喝玩乐首页" leftText="成都">
 			<view slot="left" style="height: 18px;"><image src="../../static/icon/location.png" id="navbar-icon"></image></view>
 		</navbar>
-		<view class="slider">
-			<swiper class="swiper" indicator-dots="true" autoplay="true" :interval="interval" :duration="duration">
-				<swiper-item><view class="swiper-item">A</view></swiper-item>
-				<swiper-item><view class="swiper-item">B</view></swiper-item>
-				<swiper-item><view class="swiper-item">C</view></swiper-item>
-			</swiper>
+		<view class="background-white">
+			<view class="top-bg"></view>
+			<view class="slider">
+				<swiper class="swiper" indicator-dots="true" autoplay="true" :interval="interval" :duration="duration">
+					<swiper-item><view class="swiper-item">A</view></swiper-item>
+					<swiper-item><view class="swiper-item">B</view></swiper-item>
+					<swiper-item><view class="swiper-item">C</view></swiper-item>
+				</swiper>
+			</view>
+
+			<view class="quick-link">
+				<ul>
+					<li class="link-item" @click="toScanCode()">
+						<image src="../../static/icon/index/scan.png" mode=""></image>
+						<view class="title">扫一扫</view>
+					</li>
+					<li class="link-item" @click="toReceive()">
+						<image src="../../static/icon/index/receive.png" mode=""></image>
+						<view class="title">收款</view>
+					</li>
+					<li class="link-item" @click="toPay()">
+						<image src="../../static/icon/index/pay.png" mode=""></image>
+						<view class="title">付款</view>
+					</li>
+				</ul>
+				<ul>
+					<li class="link-item" @click="toTransfer()">
+						<image src="../../static/icon/index/transfer.png" mode=""></image>
+						<view class="title">转账</view>
+					</li>
+					<li class="link-item" @click="toNearby()">
+						<image src="../../static/icon/index/nearby.png" mode=""></image>
+						<view class="title">附近优惠</view>
+					</li>
+					<li class="link-item" @click="toNotice()">
+						<image src="../../static/icon/index/notice.png" mode=""></image>
+						<view class="title">通知</view>
+					</li>
+				</ul>
+			</view>
 		</view>
-		<view class="quick-link">
-			<ul>
-				<li class="link-item" @click="toScanCode()">
-					<image src="../../static/icon/index/scan.png" mode=""></image>
-					<view class="title">扫一扫</view>
-				</li>
-				<li class="link-item" @click="toReceive()">
-					<image src="../../static/icon/index/receive.png" mode=""></image>
-					<view class="title">收款</view>
-				</li>
-				<li class="link-item" @click="toPay()">
-					<image src="../../static/icon/index/pay.png" mode=""></image>
-					<view class="title">付款</view>
-				</li>
-			</ul>
-			<ul>
-				<li class="link-item" @click="toTransfer()">
-					<image src="../../static/icon/index/transfer.png" mode=""></image>
-					<view class="title">转账</view>
-				</li>
-				<li class="link-item" @click="toNearby()">
-					<image src="../../static/icon/index/nearby.png" mode=""></image>
-					<view class="title">附近优惠</view>
-				</li>
-				<li class="link-item" @click="toNotice()">
-					<image src="../../static/icon/index/notice.png" mode=""></image>
-					<view class="title">通知</view>
-				</li>
-			</ul>
-		</view>
+
 		<view class="discount">
 			<scroll-view scroll-y="true" class="scroll">
 				<view id="demo1" class="scroll-view-item">
@@ -144,26 +148,28 @@ export default {
 </script>
 
 <style lang="scss">
+.background-white {
+	background-color: #ffffff;
+	padding-top: 10px;
+}
 .slider {
 	margin: 10px 15px;
 	border-radius: 12px;
 	overflow: hidden;
 	box-shadow: 0px 0px 8px 0px #9c9c9c;
-	background-color: #FFFFFF;
 	.swiper-item {
 		background-color: #ececec;
 		height: 100%;
 	}
 }
-.bg-content {
-	display: flex;
-	
-	.top-bg {
-		position: absolute;
-		background-color: $cw-base-color;
-		height: 100px;
-		width: 100px;
-		}
+.top-bg {
+	background-color: $cw-base-color;
+	height: 300px;
+	width: 200%;
+	border-radius: 50%;
+	position: absolute;
+	top: -150px;
+	margin-left: -50%;
 }
 
 #navbar-icon {
@@ -186,12 +192,12 @@ export default {
 		.link-item {
 			margin: 0 25px;
 			text-align: center;
-			image{
+			image {
 				width: 54px;
 				height: 54px;
 				border-radius: 10px;
 			}
-			.title{
+			.title {
 				font-size: 13px;
 			}
 		}

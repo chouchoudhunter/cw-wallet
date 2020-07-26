@@ -50,8 +50,11 @@
 	}
 </script>
 
-<style lang="scss">
-
+<style lang="scss" scoped>
+page{
+	background-color: #FFFFFF;
+	//padding-bottom: 50px;
+}
 .article{
 	margin: 25px 12px;
 	h1{

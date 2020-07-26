@@ -36,10 +36,11 @@
 	}
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+	page{
+		background-color: #494949;
+	}
 #sacn-qr-code{
-	background-color: #494949;
-	height: 100%;
 	display: flex;
 	flex-direction: column;
 	// justify-content: center;

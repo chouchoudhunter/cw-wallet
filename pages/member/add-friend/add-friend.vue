@@ -3,7 +3,7 @@
 		<navbar title="添加好友" :backBtn="true"></navbar>
 		<view class="list">
 			<rectangle  leftText="手机联系人" iconSrc="contact" ></rectangle>
-			<rectangle  leftText="扫一扫" iconSrc="scan"></rectangle>
+			<rectangle  leftText="扫一扫" iconSrc="scan" @click="toScanCode()"></rectangle>
 			<rectangle  leftText="附近的人" iconSrc="nearpeople" @click="toNearby()"></rectangle>
 		</view>
 	</view>
@@ -22,7 +22,12 @@
 				uni.navigateTo({
 					url: '../nearby/nearby'
 				});
-			}
+			},
+			toScanCode() {
+				uni.navigateTo({
+					url: '../../my/scan-qr-code/scan-qr-code'
+				});
+			},
 		}
 	}
 </script>
